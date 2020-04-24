@@ -1,43 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--You know who I am-->
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <title>My page</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- StyleSheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <title>MyPortfolio</title>
+  <style>
+    @media print, screen  and (min-width: 640px) {
 
-    <style>
-     .counter{zoom:1.5;}
-    </style>
+    body{
+        background-image:url("https://cdna.artstation.com/p/assets/images/images/003/985/214/large/romain-grolleau-screenshot0000-1-bis.jpg?1479190035");
+
+
+        background-repeat: no-repeat;
+    /*    background-position: center center; */
+        background-size:100% auto;/*この場合は高さが自動設定*/
+        background-size:auto 100%;/*この場合は幅が自動設定*/
+        background-size: cover;
+        background-attachment: fixed;
+        }
+        h1 {text-shadow:6px 6px 2px black;
+            text-align:left;
+            }
+        h2 {text-shadow:6px 6px 2px black;
+                text-align:left;
+                }
+        h3 {text-shadow:6px 6px 2px black;
+                text-align:left;
+                }
+        h5 {text-shadow:3px 3px 2px black;
+                        text-align:left;
+                        }
+        p {color:white;}
+        p {text-shadow:3px 3px 3px black;}
+
+        }
+        .btn-square {
+          display: inline-block;
+          padding: 0.2em 0.5em;
+          text-decoration: none;
+          background: #668ad8;/*ボタン色*/
+          color: #FFF;
+          border-bottom: solid 4px #627295;
+          border-radius: 3px;
+        }
+        .btn-square:active {
+          /*ボタンを押したとき*/
+          -webkit-transform: translateY(4px);
+          transform: translateY(4px);/*下に動く*/
+          border-bottom: none;/*線を消す*/
+        }
+        .my-skyblue{color:40a3d9;}
+        .my-instagram{color:#E1306C;}
+        .my-mail{color:white;}
+        .my-github{color:black;}
+
+        .bg_color01{
+          background:black;
+          margin: 0 calc(50% - 50vw);
+
+          }
+
+          .search_container{
+            box-sizing: border-box;
+            position: relative;
+            border: 1px solid #999;
+            display: block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            height: 2.3em;
+            width: 260px;
+            overflow: hidden;
+          }
+          .search_container input[type="text"]{
+            border: none;
+            height: 2.0em;
+            }
+            .search_container input[type="text"]:focus {
+              outline: 0;
+            }
+            .search_container input[type="submit"]{
+              cursor: pointer;
+              font-family: FontAwesome;
+              font-size: 1.3em;
+              border: none;
+              background: none;
+              color: #3879D9;
+              position: absolute;
+              width: 2.5em;
+              height: 2.5em;
+              right: 0;
+              top: -10px;
+              outline : none;
+            }
+
+     }
+
+
+    @media screen and (max-width: 640px) {
+      body{
+          background-image:url("https://cdna.artstation.com/p/assets/images/images/003/985/214/large/romain-grolleau-screenshot0000-1-bis.jpg?1479190035");
+
+
+          background-repeat: no-repeat;
+      /*    background-position: center center; */
+          background-size:100% auto;/*この場合は高さが自動設定*/
+          background-size:auto 100%;/*この場合は幅が自動設定*/
+          background-size: cover;
+          background-attachment: fixed;
+          }
+          h1 {text-shadow:6px 6px 2px black;
+              text-align:left;
+              }
+          h2 {text-shadow:6px 6px 2px black;
+                  text-align:left;
+                  }
+          h3 {text-shadow:6px 6px 2px black;
+                  text-align:left;
+                  }
+          h5 {text-shadow:3px 3px 2px black;
+                          text-align:left;
+                          }
+          p {color:white;}
+          p {text-shadow:3px 3px 3px black;}
+
+          }
+          .btn-square {
+            display: inline-block;
+            padding: 0.2em 0.5em;
+            text-decoration: none;
+            background: #668ad8;/*ボタン色*/
+            color: #FFF;
+            border-bottom: solid 4px #627295;
+            border-radius: 3px;
+          }
+          .btn-square:active {
+            /*ボタンを押したとき*/
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);/*下に動く*/
+            border-bottom: none;/*線を消す*/
+          }
+          .my-skyblue{color:40a3d9;}
+          .my-instagram{color:#E1306C;}
+          .my-mail{color:white;}
+          .my-github{color:black;}
+
+          .bg_color01{
+            background:black;
+            margin: 0 calc(50% - 50vw);
+
+            }
+
+            .search_container{
+              box-sizing: border-box;
+              position: relative;
+              border: 1px solid #999;
+              display: block;
+              padding: 3px 10px;
+              border-radius: 20px;
+              height: 2.3em;
+              width: 260px;
+              overflow: hidden;
+            }
+            .search_container input[type="text"]{
+              border: none;
+              height: 2.0em;
+              }
+              .search_container input[type="text"]:focus {
+                outline: 0;
+              }
+              .search_container input[type="submit"]{
+                cursor: pointer;
+                font-family: FontAwesome;
+                font-size: 1.3em;
+                border: none;
+                background: none;
+                color: #3879D9;
+                position: absolute;
+                width: 2.5em;
+                height: 2.5em;
+                right: 0;
+                top: -10px;
+                outline : none;
+              }
+              .cont{
+                    width:100%;
+                  }
+
+       }
+
+</style>
 </head>
 <body>
-  <div class="container">
-      <!--
-  <h4>アクセスカウンター</h4> -->
-    <!--カウンタータグここから 
-  <table  border="0" cellpadding="0" cellspacing="0" ><tr><td><table border="0" cellspacing="1" cellpadding="0"><tr><td align="left">
-  <img src="http://www.at-counter.biz/image/today.gif" class="counter pr-1" alt="アクセスカウンター" width="30" height="12" border="0" /></a></td><td align="left" class="counter pr-3">
-    <script type="text/javascript"> document.write('<script src="http://at-counter.biz/acs.php?');document.write('r='+document.referrer+'&p='+document.location.href);document.write('&t=0114&m=1"><\/script>');</script></td><td align="left" "counter pr-3">
-  <img src="http://www.at-counter.biz/image/yesterday.gif" class="counter" alt="無料カウンター" width="50" height="12" border="0" /></a></td><td align="left" class="counter pr-3">
-    <script type="text/javascript"> document.write('<script src="http://at-counter.biz/acs.php?');document.write('r='+document.referrer+'&p='+document.location.href);document.write('&t=0114&m=2"><\/script>');
-  </script></td><td align="left" "counter pr-3"><img src="http://www.at-counter.biz/image/total.gif" class="counter" alt="無料アクセスカウンター" width="30" height="12" border="0" /></a>
-  </td><td align="left" class="counter pr-3"><script type="text/javascript"> document.write('<script src="http://at-counter.biz/acs.php?');document.write('r='+document.referrer+'&p='+document.location.href);document.write('&t=0114&m=3"><\/script>');</script></td><td>
-  </a>
-  </td></tr></table></td></tr></table> カウンタータグここまで-->
+<div class="container">
+<!--  <h5 class="link3 display-5 text-light  ">Would you please spread if you like ?</h5> -->
 
-  <h1 class="mt-5">ポートフォリオ(製作途中)</h1>
-  <h2 class="mt-5">制作一覧</h2>
-  <h4><a href="http://multisearchengines.herokuapp.com/"  rel=”nofollow” >Multisearchengines</a></h4>
-  <h5>様々な検索サービスを一つのページで行えるようにしました。<h5>
-  <h4><a href="https://googlecsplus.herokuapp.com/"  rel="nofollow" >GoogleCS</a></h4>
-  <h5>Googleの検索コマンドがより直感的に使えるようにしました。</h5>
+ <h1 class="display-2 text-light  pt-5 pb-4 ">Welcome </h1>
+ <h1 class="pt-4 pb-4"></h1>
+  <h1 class="display-4 text-light pt-4 pb-4">I'm a university student</h1>
+<h1 class="pt-4 pb-4"></h1>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<!-- <div class="pl-5 scroll_bg bg_color01"> -->
+ <h2 class="display-4 text-light  pt-5 pb-4">Projects / Websites</h2>
+ <h2 class=" text-light " ><a class=" text-info" href="http://multisearchengines.herokuapp.com/"  rel=”nofollow” >Multisearchengines</a></h2>
+ <h5 class=" text-light " >様々な検索サービスを一つのページで行えるようにしました。<h5>
+ <h2 class=" text-light mt-4 "><a class=" text-info" href="https://googlecsplus.herokuapp.com/"  rel="nofollow" >GoogleCS+</a></h2>
+ <h5 class="text-light s" >Googleの検索コマンドをより直感的に使えるようにしました。</h5>
+
+<h1 class="pt-4 pb-4"></h1>
+ <h2 class="display-4 text-light pt-5 pb-3 ">Get in touch</h2>
+<div class="row">
+  <p class="ml-5 cont">Twitter</p>
+  <a href="https://twitter.com/CFILORVY1594" class="ml-5 cont"><i class="fab fa-twitter fa-3x faa-bounce animated-hover my-skyblue"></i></a>
+  <p class="ml-5 cont">github</p>
+  <a href="https://github.com/hirokazuniimoto" class="ml-5 cont"><i class="fab fa-3x fa-github  faa-bounce animated-hover my-github"></i></a>
+  <p class="ml-5 cont">GMail</p>
+  <a href="mailto:kazumoto58427@gmail.com?subject=問い合わせ&amp;body=ご記入ください" class="ml-5 cont"><i class="fas fa-envelope fa-3x faa-bounce animated-hover my-mail"></i></a>
+  <p class="ml-5 cont">Instagram</p>
+  <a href="https://www.instagram.com/?hl=ja" class="ml-5 cont"><i class="fab fa-instagram fa-3x faa-bounce animated-hover my-instagram"></i></a>
 </div>
+
+
+
+  <h1 class="pt-4 pb-4"></h1>
+  <h1 class="pt-4 pb-4"></h1>
+
+<!--  </div> -->
+<!--<h3 class="display-5 text-light">News</h3> -->
+
+
+<h3 class="display-5 text-light">google 検索</h3>
+
+<div class="form-group">
+  <form method="post" action="https://www.google.com/webhp?hl=ja&sa=X&ved=0ahUKEwi7npjm-YHpAhXTEqYKHVkEDDQQPAgH">
+
+    <input type="text" class="text w-25 "  onchange="textinput(this.value)" name="send3" id="input_message" value="" style="height:35px;">
+    <input type="submit" class="btn-square" onClick="func1()"  value="検索" 　style="height:15;"> <!-- onClick="location.href=''" -->
+
+<!--  </form> -->
+  <div id="output_message"></div>
+
+  <script language="javascript" type="text/javascript">
+    var result;
+    result="https://www.google.com/search?sxsrf=ACYBGNQ3H_FH0EJkcDs4UK9blS06G4dRoA%3A1576058296257&ei=uL3wXameD-HomAWwy5CgAw&q="
+  function func1() {
+    var input_message = document.getElementById("input_message").value;
+    input_message = result+ input_message ;
+    window.open(input_message,"_blank");
+  }
+  </script>
+</div>
+
+<h5 class="display-5 text-light float-right">That is the only way to go</h5>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
