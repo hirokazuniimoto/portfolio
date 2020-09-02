@@ -75,6 +75,9 @@
       }
       .span {color:red;}
 
+
+
+
   @media (min-width: 772px){
         .type {
       /*    color:#FF0000; */
@@ -84,6 +87,14 @@
     /*    p {text-shadow:3px 3px 3px black;} */
 }
 
+.center {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+line-height: 180px;
+}
+
+
 }
 @media (max-width: 771px){
       .type {
@@ -91,6 +102,9 @@
       /*  -webkit-text-stroke: 1px blue;
          text-stroke: 1px blue;}
   /*    p {text-shadow:3px 3px 3px black;} */
+}
+.center {
+line-height: 180px;
 }
 
         }
@@ -165,23 +179,24 @@
               }
 
 
+
 </style>
 </head>
 <body>
 <div class="container">
  <!-- <h1 class="display-1 text-light text-center pt-5 pb-4 ">Welcome </h1> -->
 
-<h5 class="display-5 text-left">welcome to my website</h5>
+<h5 class="display-5 text-left pt-2 mt-2"></h5>
 <h2 class="pt-2 pb-2"></h2>
 <h2 class="pt-4 pb-4"></h2>
 
 
 
-
-<p id="typing" class="type text-center"></p>
-<p id="typing2" class="type  text-center"></p>
-<p id="typing3" class="type text-center"></p>
-
+<h2 class="pt-5 pb-5"></h2>
+<!--<p id="typing" class="type text-center"></p>-->
+<p id="typing2" class="type  text-center center"></p>
+<!--<p id="typing3" class="type text-center"></p>-->
+<h2 class="pt-5 pb-5"></h2>
 
 
 <script language="javascript" type="text/javascript">
@@ -193,9 +208,9 @@
   });
 }
 
-setTimeout("typing('#typing', 'Engineering.')",500);
-setTimeout("typing('#typing2', 'Security.')",1500);
-setTimeout("typing('#typing3', 'Artificial Intelligence.')",2500);
+//setTimeout("typing('#typing', 'Engineering.')",500);
+setTimeout("typing('#typing2', \"I\'m CTO, Bitch.\")",1000);
+//setTimeout("typing('#typing3', 'Artificial Intelligence.')",2500);
 
 
 </script>
@@ -203,7 +218,7 @@ setTimeout("typing('#typing3', 'Artificial Intelligence.')",2500);
 <h2 class="pt-4 pb-4"></h2>
 <h2 class="pt-4 pb-4"></h2>
 
-<h2 class="display-5 pt-4 pb-4 text-center">I'm 21. Studying computer science. A student at Kobe university.</h2>
+<h2 class="display-5 pt-4 pb-4 text-center">Welcome to my website.<br> Studying computer science.<br> A student at Kobe university.</h2>
 <h2 class="pt-4 pb-4"></h2>
 
 <h2 class="display-4 text-center title pt-5 pb-4">Skills / Interests</h2>
