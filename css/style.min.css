@@ -1,0 +1,248 @@
+.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+/*openmapsmain*/
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+  .titleofpage{
+    font-size: 50px;
+
+  }
+  .marker_blue { background:linear-gradient(transparent 70%, #00d2ff 0%); }
+
+  .searchkeyword{
+    /*text-align: center;*/
+    /*width:75%;*/
+  }
+
+}
+@media screen and (max-width:1340px) and (min-width:480px){
+  /*画面幅が780pxまでの時*/
+  .titleofpage{
+    font-size: 105px;
+  }
+  .marker_blue { background:linear-gradient(transparent 70%, #00d2ff 0%); }
+}
+@media screen and (min-width:1341px){
+  /*画面幅が781px以上の時*/
+  .titleofpage{
+    font-size: 140px;
+  }
+  .marker_blue { background:linear-gradient(transparent 70%, #00d2ff 0%); }
+}
+
+/*openmapsintrohtml*/
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+  .title2{
+    font-size: 32px;
+  }
+  .explain{
+    font-size: 17px;
+  }
+  .mainbuttontext{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:1340px) and (min-width:480px){
+  /*画面幅が780pxまでの時*/
+  .title2{
+    font-size: 60px;
+  }
+  .explain{
+    font-size: 20px;
+  }
+  .mainbuttontext{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width:1341px){
+  /*画面幅が781px以上の時*/
+  .title2{
+    font-size: 70px;
+  }
+  .explain{
+    font-size: 20px;
+  }
+  .mainbuttontext{
+    font-size: 24px;
+  }
+}
+
+/*takemapsmainhtml*/
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+  .title2{
+    font-size: 32px;
+  }
+  .explain{
+    font-size: 17px;
+  }
+  .mainbuttontext{
+    font-size: 14px;
+  }
+  .popularMap{
+    margin-top: 48px;
+  }
+  .card-text{
+    height: 90px;
+  }
+  .card-title{
+    font-size: 22px;
+  }
+  .barname{
+    color: white;
+  }
+
+
+}
+@media screen and (max-width:1340px) and (min-width:480px){
+  /*画面幅が780pxまでの時*/
+  .title2{
+    font-size: 60px;
+  }
+  .explain{
+    font-size: 20px;
+  }
+  .mainbuttontext{
+    font-size: 16px;
+  }
+  .card-title{
+    font-size: 22px;
+  }
+  .card-text{
+    height: 90px;
+  }
+
+}
+@media screen and (min-width:1341px){
+  /*画面幅が781px以上の時*/
+  .title2{
+    font-size: 70px;
+  }
+  .explain{
+    font-size: 20px;
+  }
+  .mainbuttontext{
+    font-size: 18px;
+  }
+  .card-text{
+    height: 90px;
+  }
+  .card-title{
+    font-size: 22px;
+  }
+  .card{
+    border-width: 5px;
+  }
+  .barname{
+    color:black;
+  }
+  .seracharea{
+    background-color: white;
+  }
+  .form1{
+    font-size: 20px;
+  }
+
+}
+
+
+
+
+
+/*テキストアニメーション*/
+/* animation */
+@-webkit-keyframes passing-bar{
+	0% {
+		left: 0;
+		right: auto;
+		width: 0;
+	}
+	50% {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+	51% {
+		left: auto;
+		right: 0;
+		width: 100%;
+	}
+	100% {
+		left: auto;
+		right: 0;
+		width: 0;
+	}
+}
+@keyframes passing-bar{
+	0% {
+		left: 0;
+		width: 0;
+	}
+	50% {
+		left: 0;
+		width: 100%;
+	}
+	51% {
+		left: 0;
+		width: 100%;
+	}
+	100% {
+		left: 100%;
+		width: 0;
+	}
+}
+@-webkit-keyframes passing-txt{
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes passing-txt{
+	0% { opacity:0; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+/* css */
+.passing .passing-box {
+	display: block;
+	text-align: center;
+}
+.passing .passing-bar {
+	position: relative;
+	display: inline-block;
+	/*　後ほど解説　*/
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.passing .passing-bar:before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	/* 任意の値 */
+	background: #000;
+}
+.passing .passing-txt {
+	opacity: 0;
+	/* 後ほど解説 */
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	/* 任意の値 */
+
+	font-weight: bold;
+	line-height: 1.5;
+}
+.passing.move .passing-bar:before {
+	-webkit-animation: passing-bar 1s ease 0s 1 normal forwards;
+	animation: passing-bar 1s ease 0s 1 normal forwards;
+}
+.passing.move .passing-txt {
+	-webkit-animation: passing-txt 0s ease .5s 1 normal forwards;
+	animation:passing-txt 0s ease .5s 1 normal forwards;
+}
