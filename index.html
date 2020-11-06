@@ -1,339 +1,504 @@
-<!doctype html>
-<!--You know who I am-->
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-
-
-  <title>My homepage</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <style>
-  body{
-  /*    background-image:url("https://cdna.artstation.com/p/assets/images/images/003/985/214/large/romain-grolleau-screenshot0000-1-bis.jpg?1479190035"); */
-  /*    background-image:url("https://s2.best-wallpaper.net/wallpaper/2560x1600/1811/San-Francisco-city-night-bridge-buildings-cars-illumination-USA_2560x1600.jpg"); */
-  /*    background-image:url("https://s1.1zoom.me/big0/225/Bridges_Rivers_Germany_504883.jpg"); */
-
-
-
-    /*background-image:url("https://images.idgesg.net/images/article/2018/08/abstract_digital_network_mapping_by_mf3d_gettyimages-888477728_1200x800-100768192-large.jpg");*/
-
-
-    background-color:#111111;
-
-      background-repeat: no-repeat;
- /*     background-position: center center; */
-      background-size:100% auto;/*この場合は高さが自動設定*/
-      background-size:auto 100%;/*この場合は幅が自動設定*/
-      background-size: cover;
-      background-attachment: fixed;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
       }
+    }
 
-      body:before{
-    content:"";
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:-1;
-    width:100%;
-    height:100vh;
-/*    background:url("https://images.idgesg.net/images/article/2018/08/abstract_digital_network_mapping_by_mf3d_gettyimages-888477728_1200x800-100768192-large.jpg") center no-repeat; */
-    background-size:cover;
-  }
-
-        h1 {text-shadow:6px 6px 2px black;
-            text-align:left;
-          }
-
-        h2 {/*text-shadow:3px 3px 2px black;*/
-                text-align:left;
-                color:white;
-                }
-
-        h3 {text-shadow:6px 6px 2px black;
-                text-align:left;
-                }
-        h5 {/* text-shadow:3px 3px 2px black; */
-                        text-align:left;
-                        color:white;
-                        }
-          p {color:white;
-       }
-      .website{
-          color:#005FFF;
-     /*   -webkit-text-stroke: 1px black;
-            text-stroke: 1px black; */
-      }
-      .title{
-
-      }
-      .span {color:red;}
-
-
-
-
-  @media (min-width: 772px){
-        .type {
-      /*    color:#FF0000; */
-          font-size: 90px;
-      /*    -webkit-text-stroke: 1px blue;
-           text-stroke: 1px blue;}
-    /*    p {text-shadow:3px 3px 3px black;} */
-}
-
-.center {
-display: table-cell;
-vertical-align: middle;
-text-align: center;
-line-height: 180px;
-}
-
-
-}
-@media (max-width: 771px){
-      .type {
-        font-size: 45px;
-      /*  -webkit-text-stroke: 1px blue;
-         text-stroke: 1px blue;}
-  /*    p {text-shadow:3px 3px 3px black;} */
-}
-.center {
-line-height: 180px;
-}
-
-        }
-        .btn-square {
-          display: inline-block;
-          padding: 0.2em 0.5em;
-          text-decoration: none;
-          background: #668ad8;/*ボタン色*/
-          color: #FFF;
-          border-bottom: solid 4px #627295;
-          border-radius: 3px;
-        }
-        .btn-square:active {
-          /*ボタンを押したとき*/
-          -webkit-transform: translateY(4px);
-          transform: translateY(4px);/*下に動く*/
-          border-bottom: none;/*線を消す*/
-        }
-        .my-skyblue{color:#00aced;}
-        .my-instagram{color:#E1306C;}
-        .my-mail{color:white;}
-        .my-github{color:white;}
-
-        .bg_color01{
-          background:black;
-          margin: 0 calc(50% - 50vw);
-
-          }
-
-          .search_container{
-            box-sizing: border-box;
-            position: relative;
-            border: 1px solid #999;
-            display: block;
-            padding: 3px 10px;
-            border-radius: 20px;
-            height: 2.3em;
-            width: 260px;
-            overflow: hidden;
-          }
-          .search_container input[type="text"]{
-            border: none;
-            height: 2.0em;
-            }
-            .search_container input[type="text"]:focus {
-              outline: 0;
-            }
-            .search_container input[type="submit"]{
-              cursor: pointer;
-              font-family: FontAwesome;
-              font-size: 1.3em;
-              border: none;
-              background: none;
-              color: #3879D9;
-              position: absolute;
-              width: 2.5em;
-              height: 2.5em;
-              right: 0;
-              top: -10px;
-              outline : none;
-            }
-
-            .type::after {
-              content: '';
-              border-right: 2px solid;
-              animation: flashing 0.6s linear infinite;
-            }
-
-            @keyframes flashing {
-              0% {
-                opacity: 0;
-              }
-
-
-
-</style>
+  </style>
 </head>
+
 <body>
-<div class="container">
- <!-- <h1 class="display-1 text-light text-center pt-5 pb-4 ">Welcome </h1> -->
-
-<h5 class="display-5 text-left pt-2 mt-2"></h5>
-<h2 class="pt-2 pb-2"></h2>
-<h2 class="pt-4 pb-4"></h2>
 
 
+  <!-- Full Page Intro -->
+  <!--<div class="view" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbtze2qqMvgFQ_wBjKdGLoHtiKcdpGjTxwVQ&usqp=CAU'); background-repeat: no-repeat; background-size: cover;">-->
+  <div class="view" style="background-color: #111111; background-repeat: no-repeat; background-size: cover;">
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+      <div class="row ml-2 mr-2">
+      <div class="col-lg-12 col-12" ></div>
+      <div class="col-lg-12 col-12 white-text">
+        <h1 class="titleofpage text-center" id="typing2"><strong class="text-center"></strong></h1>
+      </div>
 
-<h2 class="pt-5 pb-5"></h2>
-<!--<p id="typing" class="type text-center"></p>-->
-<p id="typing2" class="type  text-center center"></p>
-<!--<p id="typing3" class="type text-center"></p>-->
-<h2 class="pt-5 pb-5"></h2>
+      <script language="javascript" type="text/javascript">
+        const typing = (element, sentence) => {
+        [...sentence].forEach((character, index) => {
+          setTimeout(() => {
+            document.querySelector(element).textContent += character;
+          }, 100 * ++index);
+        });
+      }
 
-
-<script language="javascript" type="text/javascript">
-  const typing = (element, sentence) => {
-  [...sentence].forEach((character, index) => {
-    setTimeout(() => {
-      document.querySelector(element).textContent += character;
-    }, 100 * ++index);
-  });
-}
-
-//setTimeout("typing('#typing', 'Engineering.')",500);
-setTimeout("typing('#typing2', \"I\'m CTO, Bitch.\")",1000);
-//setTimeout("typing('#typing3', 'Artificial Intelligence.')",2500);
-
-
-</script>
-<h2 class="pt-4 pb-4"></h2>
-<h2 class="pt-4 pb-4"></h2>
-<h2 class="pt-4 pb-4"></h2>
-
-<h2 class="display-5 pt-4 pb-4 text-center">Welcome to my website.<br> Studying computer science.<br> A student at Kobe university.</h2>
-<h2 class="pt-4 pb-4"></h2>
-
-<h2 class="display-4 text-center title pt-5 pb-4">Skills / Interests</h2>
-<h2 class="text-center pb-3" >Python<h5>
-<h2 class="text-center pb-3" >C</h5>
-<h2 class="text-center pb-3" >Javascript<h5>
-<h2 class="text-center pb-3" >HTML/CSS</h5>
-<!-- <h5 class="text-center pb-3" >サーバー構築</h5>-->
-<h2 class="text-center pb-3" >Security<br>
-                              --Reverse Engineering<br>
-                              --pwn<br>
-                              --Network<br>
-                              --Web
-                                </h5>
-<h2 class="text-center pb-3" >Framework<br>
-                              --Flask<br>
-                              --Bootstrap
-                              </h5>
-<h2 class="text-center pb-3" >Linux<br>
-                              --ubuntu<br>
-                              --parrot Security OS<br>
-                              --Tails
-                              </h5>
+      //setTimeout("typing('#typing', 'Engineering.')",500);
+      setTimeout("typing('#typing2', \"I\'m CTO, Bitch.\")",1000);
+      //setTimeout("typing('#typing3', 'Artificial Intelligence.')",2500);
 
 
+      </script>
 
 
-<!-- <div class="pl-5 scroll_bg bg_color01"> -->
- <h2 class="display-4 text-center title pt-5 pb-4">Projects / Websites</h2>
- <h2 class=" text-center website" ><a class="website" href="http://multisearchengines.herokuapp.com/"  rel=”nofollow” >Multisearchengines</a></h2>
- <h5 class="text-center" >様々な検索サービスを一つのページで行えるようにしました。<h5>
- <h2 class=" text-light mt-4 text-center website"><a class="website " href="https://googlecsplus.herokuapp.com/"  rel="nofollow" >GoogleCS+</a></h2>
- <h5 class="text-center" >Googleの検索コマンドをより直感的に使えるようにしました。</h5>
- <h2 class=" text-light mt-4 text-center website" ><a class="website " href="https://loginhacking.herokuapp.com/"  rel=”nofollow” >User Authentication Hacking !!!</a></h2>
- <h5 class="text-center" >ハッキングでログイン認証を突破していくサイトです。<h5>
- <h2 class=" text-light mt-4 text-center website" ><a class="website " href="https://harukaze1.herokuapp.com/"  rel=”nofollow” >HARUKAZE Project</a></h2>
- <h5 class="text-center" >自作プログラミング言語「HARUKAZE」のメインページです。<h5>
- <h2 class=" text-light mt-4 text-center website" ><a class="website" href="HarukaZe.zip" download="HarukaZe.zip">HARUKAZE exe for Windows</a></h2>
- <h5 class="text-center" >自作プログラミング言語「HARUKAZE」のダウンロードverです。ダウンロードして自分の環境で使えます。<h5>
- <h2 class=" text-light mt-4 text-center website" ><a class="website " href="https://pypi.org/project/clsforyou/"  rel=”nofollow” >clsforyou</a></h2>
- <h5 class="text-center" >pythonの自作パッケージ「clsforyou」を公開しました。「pip install clsforyou」でインストールできます。<h5>
- <h2 class=" text-light mt-4 text-center website" ><a class="website " href="https://hirokazuniimoto.github.io/sky_mainpage/"  rel=”nofollow” >SKY/FLY Project</a></h2>
- <h5 class="text-center" >音声認識ソフトウェア「SKY/FLY」のメインページです。<h5>
- <h2 class=" text-light mt-4 text-center website" ><a class="website " href="https://github.com/hirokazuniimoto/portfolio/releases/tag/release3"  rel=”nofollow” >WorkPlace has SKY</a></h2>
- <h5 class="text-center" >音声認識ソフトウェア「SKY」の機能をつけた情報ソフトウェアです。<h5>
+    </div>
+  </div>
+  </div>
+  <!-- Full Page Intro -->
 
- <!--
- <h2 class=" text-light mt-4 text-center website" ><a class="website " href="https://hirokazuniimoto.github.io/FLY-japanese-/"  rel=”nofollow” >FLY(googlechrome音声認識アシスタント)　※試作</a></h2>
- <h5 class="text-center" >音声を認識して主にgooglechromeブラウザを操作できます。「～で検索」などと話しかけると反応します。<h5>
- <h2 class=" text-light mt-4 text-center website" ><a class="website " href="https://hirokazuniimoto.github.io/FLY-English-/"  rel=”nofollow” >FLY-English-（googlechrome音声認識アシスタント）　※試作</a></h2>
- <h5 class="text-center" >FLY（音声認識アシスタント）の英語版です。英語で話しかけてください。<h5>
--->
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+        <h1 class="display-3 pt-4 pb-4 text-center"><strong class="marker_blue">Welcome to my website.</strong></h1>
+        <h2 class="display-5 pt-4 pb-2 text-center">Studying computer science.</h2>
+        <h2 class="display-5 pt-2 pb-2 text-center"> A student at Kobe university.</h2>
+      </section>
+      <!--Section: Main info-->
+
+      <hr class="my-5">
+
+      <!--Section: Main features & Quick Start-->
+      <section class="mt-5 wow fadeIn">
+
+        <h2 class="display-4 text-center title pt-5 pb-4"><strong class="marker_blue">Skills / Interests</strong></h2>
+
+        <h2 class="pt-4 mt-4 pb-3 text-center">Web development, Hacking, OS development, Linux Server Build etc...</h2>
+
+        <h2 class="pt-4 mt-4 pb-3 text-center">Programming Languages</h2>
+
+        <h5 class="text-center pb-1" >Python<h5>
+        <h5 class="text-center pb-1" >C</h5>
+        <h5 class="text-center pb-1" >Javascript<h5>
+        <h5 class="text-center pb-1" >PHP</h5>
+        <h5 class="text-center pb-1" >Assembly Language</h5>
+        <h5 class="text-center pb-1" >HTML/CSS</h5>
+        <!-- <h5 class="text-center pb-3" >サーバー構築</h5>-->
+
+        <h2 class="pt-4 mt-4 pb-3 text-center">Framework</h2>
+
+        <h5 class="text-center pb-1" >Flask<h5>
+        <h5 class="text-center pb-1" >React</h5>
+        <h5 class="text-center pb-1" >Bootstrap<h5>
+
+        <h2 class="pt-4 mt-4 pb-3 text-center">Security</h2>
+
+        <h5 class="text-center pb-1" >Web Security<h5>
+        <h5 class="text-center pb-1" >Exploit</h5>
+        <h5 class="text-center pb-1" >Network<h5>
+        <h5 class="text-center pb-1" >OSINT</h5>
+        <h5 class="text-center pb-1" >CTF</h5>
+
+        <h2 class="pt-4 mt-4 pb-3 text-center">Linux</h2>
+
+        <h5 class="text-center pb-1" >Ubuntu<h5>
+        <h5 class="text-center pb-1" >Parrot Security OS</h5>
+        <h5 class="text-center pb-1" >Tails<h5>
+
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+
+      <!--Section: Not enough-->
+      <section>
+
+        <h2 class="display-4 text-center title pt-5 "><strong class="marker_blue">Projects / Websites</strong></h2>
+
+        <div  class="row wow fadeIn pt-5 mt-5">
+
+
+
+          <!--card set -->
+          <div class="col-md-4 col-12 popularMap">
+            <div class="row">
+              <div class="col-1" ></div>
+              <!--Card-->
+              <div class="card col-10 ">
+                  <!--Card content-->
+                  <div class="card-block">
+                      <!--Title-->
+                      <h4 class="card-title mt-3 text-center"><strong>Multisearchengines</strong></h4>
+                      <hr>
+                      <!--Text-->
+                      <p class="card-text text-center">様々な検索サービスを一つのページで行えるようにしました。</p>
+                      <div class="text-xs-center row">
+                          <div class="col-lg-2" ></div>
+                          <a class="btn btn-primary col-lg-8" href="http://multisearchengines.herokuapp.com/" >ページへ行く</a>
+                          <div class="col-lg-2" ></div>
+                      </div>
+                      <div class="mt-4" ></div>
+                  </div>
+                  <!--/.Card content-->
+                </div>
+                <!--/.Card-->
+                <div class="col-1" ></div>
+            </div>
+          </div>
+
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>GoogleCS+</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p class="card-text text-center">Googleの検索コマンドをより直感的に使えるようにしました。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="https://googlecsplus.herokuapp.com/">ページへ行く</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>User Authentication Hacking !!!</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p id="contentmap" class="card-text text-center">ハッキングでログイン認証を突破していくサイトです。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="https://loginhacking.herokuapp.com/">ページへ行く</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap mt-5">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>HARUKAZE Project</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p class="card-text text-center">自作プログラミング言語「HARUKAZE」のメインページです。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="https://harukaze1.herokuapp.com/">ページへ行く</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap mt-5">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>HARUKAZE exe for Windows</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p class="card-text text-center">自作プログラミング言語「HARUKAZE」のダウンロードverです。ダウンロードして自分の環境で使えます。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="HarukaZe.zip">ダウンロード</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap mt-5">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>clsforyou</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p class="card-text text-center">pythonの自作パッケージ「clsforyou」を公開しました。「pip install clsforyou」でインストールできます。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="https://pypi.org/project/clsforyou/" >ページへ行く</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap mt-5">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>SKY/FLY Project</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p class="card-text text-center">音声認識ソフトウェア「SKY/FLY」のメインページです。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="https://hirokazuniimoto.github.io/sky_mainpage/" >ページへ行く</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap mt-5">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>WorkPlace has SKY</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p class="card-text text-center">音声認識ソフトウェア「SKY」の機能をつけた情報ソフトウェアです。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="https://github.com/hirokazuniimoto/portfolio/releases/tag/release3">ページへ行く</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+             <!--card set -->
+             <div class="col-md-4 col-12 popularMap mt-5">
+               <div class="row">
+                 <div class="col-1" ></div>
+                 <!--Card-->
+                 <div class="card col-10 ">
+                     <!--Card content-->
+                     <div class="card-block">
+                         <!--Title-->
+                         <h4 class="card-title mt-3 text-center"><strong>Autumn Directory</strong></h4>
+                         <hr>
+                         <!--Text-->
+                         <p class="card-text text-center">複数のページをひとまとまりで管理できるWEBアプリです。オンラインでメモを書いて保存する機能もあります。</p>
+                         <div class="text-xs-center row">
+                             <div class="col-lg-2" ></div>
+                             <a class="btn btn-primary col-lg-8" href="">近日公開予定</a>
+                             <div class="col-lg-2" ></div>
+                         </div>
+                         <div class="mt-4" ></div>
+                     </div>
+                     <!--/.Card content-->
+                   </div>
+                   <!--/.Card-->
+                   <div class="col-1" ></div>
+               </div>
+             </div>
+
+
+
+
+
+
+        </div>
+
+
+      </section>
+      <!--Section: Not enough-->
+
+      <hr class="mb-5">
+
+      <!--Section: More-->
+      <section>
+
+
+      </section>
+      <!--Section: More-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--
+     <h2 class="pt-4 pb-4"></h2>
+     <h2 class="display-4 text-center title pt-5 pb-4">Blog</h2>
+     <h2 class=" text-center website" ><a class="website text-light" href="https://hirokazuniimoto.github.io/blog/"  rel=”nofollow” >暇な学生 ブログ</a></h2>
+    -->
+
+    <div class="pt-4 pb-4">
+
+      <h2 class="display-4 pt-5 pb-3 text-center"><strong class="marker_blue">Get in touch</strong></h2>
+      <!--
+      <div class="row pt-4 mt-4">
+        <div class="col-md-3 row">
+          <a href="https://twitter.com/CFILORVY1594" class="col-md-12 col-12 text-center"><i class="fab fa-twitter fa-3x faa-bounce animated-hover my-skyblue"></i></a>
+        </div>
+        <div class="col-md-3 row">
+
+          <a href="https://github.com/hirokazuniimoto" class="col-md-12 col-12 text-center"><i class="fab fa-3x fa-github  faa-bounce animated-hover my-github"></i></a>
+
+        </div>
+        <div class="col-md-3 row">
+
+          <a href="mailto:kazumoto58427@gmail.com?subject=問い合わせ&amp;body=ご記入ください" class="col-md-12 col-12 text-center"><i class="fas fa-envelope fa-3x faa-bounce animated-hover my-mail"></i></a>
+
+        </div>
+        <div class="col-md-3 row">
+
+          <a href="https://www.instagram.com/?hl=ja" class="col-md-12 col-12 text-center"><i class="fab fa-instagram fa-3x faa-bounce animated-hover my-instagram"></i></a>
+
+        </div>
+      </div>
+      -->
 
 <!--
- <h2 class="pt-4 pb-4"></h2>
- <h2 class="display-4 text-center title pt-5 pb-4">Blog</h2>
- <h2 class=" text-center website" ><a class="website text-light" href="https://hirokazuniimoto.github.io/blog/"  rel=”nofollow” >暇な学生 ブログ</a></h2>
+      <div class="row">
+        <p class="col-md-1"></p>
+        <p class="ml-1 col-md-1 col-12 text-center">Twitter</p>
+        <a href="https://twitter.com/CFILORVY1594" class="ml-2 col-lg-1 col-12 text-center"><i class="fab fa-twitter fa-3x faa-bounce animated-hover my-skyblue"></i></a>
+        <p class="ml-1 col-lg-1 col-12 text-center">github</p>
+        <a href="https://github.com/hirokazuniimoto" class="ml-2 col-lg-1 col-12 text-center"><i class="fab fa-3x fa-github  faa-bounce animated-hover my-github"></i></a>
+        <p class="ml-1 col-lg-1 col-12 text-center">Gmail</p>
+        <a href="mailto:kazumoto58427@gmail.com?subject=問い合わせ&amp;body=ご記入ください" class="ml-2 col-lg-1 col-12 text-center"><i class="fas fa-envelope fa-3x faa-bounce animated-hover my-mail"></i></a>
+        <p class="ml-1 col-lg-1 col-12 text-center">Instagram</p>
+        <a href="https://www.instagram.com/?hl=ja" class="ml-2 col-lg-1 col-12 text-center"><i class="fab fa-instagram fa-3x faa-bounce animated-hover my-instagram"></i></a>
+        <p class="col-lg-2"></p>
+      </div>
 -->
 
-<h2 class="pt-4 pb-4"></h2>
- <h2 class="display-4 pt-5 pb-3 text-center">Get in touch</h2>
- <h2 class="pt-2 pb-2"></h2>
-<div class="row ">
-  <p class="col-lg-2"></p>
-  <p class="ml-1 col-lg-1 col-12 text-center">Twitter</p>
-  <a href="https://twitter.com/CFILORVY1594" class="ml-2 col-lg-1 col-12 text-center"><i class="fab fa-twitter fa-3x faa-bounce animated-hover my-skyblue"></i></a>
-  <p class="ml-1 col-lg-1 col-12 text-center">github</p>
-  <a href="https://github.com/hirokazuniimoto" class="ml-2 col-lg-1 col-12 text-center"><i class="fab fa-3x fa-github  faa-bounce animated-hover my-github"></i></a>
-  <p class="ml-1 col-lg-1 col-12 text-center">Gmail</p>
-  <a href="mailto:kazumoto58427@gmail.com?subject=問い合わせ&amp;body=ご記入ください" class="ml-2 col-lg-1 col-12 text-center"><i class="fas fa-envelope fa-3x faa-bounce animated-hover my-mail"></i></a>
-  <p class="ml-1 col-lg-1 col-12 text-center">Instagram</p>
-  <a href="https://www.instagram.com/?hl=ja" class="ml-2 col-lg-1 col-12 text-center"><i class="fab fa-instagram fa-3x faa-bounce animated-hover my-instagram"></i></a>
-  <p class="col-lg-2"></p>
-</div>
+
+    </div>
 
 
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://twitter.com/CFILORVY1594" target="_blank"
+        role="button">Twitter
+        <i class="fab fa-twitter ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="https://github.com/hirokazuniimoto" target="_blank"
+        role="button">GitHub
+        <i class="fab fa-github ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="mailto:kazumoto58427@gmail.com?subject=問い合わせ&amp;body=ご記入ください" target="_blank"
+        role="button">Gmail
+        <i class="fas fa-envelope ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="https://www.instagram.com/?hl=ja" target="_blank"
+        role="button">Instagram
+        <i class="fab fa-instagram ml-2"></i>
+      </a>
+    </div>
+    <!--/.Call to action-->
 
-  <h2 class="pt-4 pb-4"></h2>
-
-<!--  </div> -->
-<!--<h3 class="display-5 text-light">News</h3> -->
+    <hr class="my-4">
 
 
-<h2 class="display-4 text-center">Google</h2>
-<h2 class="pt-2 pb-2"></h2>
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright:Hirokazu Niimoto
+    </div>
+    <!--/.Copyright-->
 
-<div class="form-group">
-  <form  action="https://hirokazuniimoto.github.io/portfolio/">
-  <div class="row">
-    <p class="col-lg-4 col-3"></p>
-    <input type="text" class="text w-25 col-lg-3 col-5"  onchange="textinput(this.value)" name="send3" id="input_message" value="" placeholder="キーワードを入力"　style="height:35px;">
-    <input type="submit" class="btn-square col-lg-1 col-2 btn-primary" onClick="func1()"  value="検索" 　style="height:15;"> <!-- onClick="location.href=''" -->
-    <p class="col-lg-4 col-3"></p>
+  </footer>
+  <!--/.Footer-->
 
-  </div>
-<!--  </form> -->
-  <div id="output_message"></div>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
 
-  <script language="javascript" type="text/javascript">
-    var result;
-    result="https://www.google.co.jp/search?hl=ja&source=hp&q="
-  function func1() {
-    var input_message = document.getElementById("input_message").value;
-    input_message = result+ input_message ;
-    window.open(input_message,"_blank");
-  }
   </script>
-</div>
-
-<h5 class="display-5 float-right">2020.4</h5>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
 </body>
+
 </html>
