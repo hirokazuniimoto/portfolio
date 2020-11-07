@@ -4,7 +4,7 @@
 @media screen and (max-width:480px){
   /*画面幅が480pxまでの時*/
   .titleofpage{
-    font-size: 50px;
+    font-size: 38px;
 
   }
   .marker_blue { background:linear-gradient(transparent 70%, #00d2ff 0%); }
