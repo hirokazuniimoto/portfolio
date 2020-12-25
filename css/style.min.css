@@ -4,8 +4,7 @@
 @media screen and (max-width:480px){
   /*画面幅が480pxまでの時*/
   .titleofpage{
-    font-size: 38px;
-
+    font-size: 30px;
   }
   .marker_blue { background:linear-gradient(transparent 70%, #00d2ff 0%); }
 
@@ -18,14 +17,14 @@
 @media screen and (max-width:1340px) and (min-width:480px){
   /*画面幅が780pxまでの時*/
   .titleofpage{
-    font-size: 105px;
+    font-size: 80px;
   }
   .marker_blue { background:linear-gradient(transparent 70%, #00d2ff 0%); }
 }
 @media screen and (min-width:1341px){
   /*画面幅が781px以上の時*/
   .titleofpage{
-    font-size: 140px;
+    font-size: 120px;
   }
   .marker_blue { background:linear-gradient(transparent 70%, #00d2ff 0%); }
 }
