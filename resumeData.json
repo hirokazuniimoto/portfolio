@@ -1,0 +1,169 @@
+{
+  "main": {
+    "name":"",
+    "description":"I am a web development engineer. I'm interested in security research, OS development, Linux Server, AWS etc",
+    "image":"profilepic.jpg",
+    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "youremailhere@gmail.com",
+    "phone": "555-555-5555",
+    "github":"https://github.com/hirokazuniimoto",
+    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "address":{
+      "street":"(Your Street)",
+      "city":"(Your City)",
+      "state":"(Your State)",
+      "zip": "(Your Zip/Postal Code)"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload":"http://timbakerdev.com",
+    "social":[
+      {
+        "name":"twitter",
+        "url":"https://twitter.com/CFILORVY1594",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/hirokazuniimoto",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"gmail",
+        "url":"mailto:kazumoto58427@gmail.com?subject=問い合わせ&body=ご記入ください",
+        "className":"fa fa-envelope"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"hatena",
+        "url":"https://superhakah.hatenablog.com/",
+        "className":"fa fa-pencil"
+      }
+
+    ]
+  },
+  "resume":{
+    "skillmessage":"",
+    "education":[
+      {
+        "school":"Kobe University",
+        "degree":"Maritime science",
+        "graduated":"April 2019 - present",
+        "description":"I am studying engineering and science with a focus on Marine engineering.."
+      }
+    ],
+    "work":[
+      {
+        "company":"Re-vol.Inc",
+        "title":"Web Engineer",
+        "years":" November 2020 - Present",
+        "description":"Working as a engineer. https://re-vol.net/"
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"70%"
+      },
+      {
+        "name":"JavaScript",
+        "level":"60%"
+      },
+      {
+        "name":"PHP",
+        "level":"70%"
+      },
+      {
+        "name":"Flask",
+        "level":"70%"
+      },
+      {
+        "name":"Django",
+        "level":"60%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"40%"
+      },
+      {
+        "name":"Bootstrap",
+        "level":"70%"
+      },
+      {
+        "name":"C/C++",
+        "level":"40%"
+      },
+      {
+        "name":"HTML/CSS",
+        "level":"80%"
+      },
+      {
+        "name":"Assembly Language",
+        "level":"20%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Multisearchengines",
+        "category":"自作プログラミング言語「HARUKAZE」のメインページです。",
+        "image":"スクリーンショット (46).png",
+        "url":"http://multisearchengines.herokuapp.com/"
+      },
+      {
+        "title":"GoogleCS+",
+        "category":"自作プログラミング言語「HARUKAZE」のダウンロードverです。ダウンロードして自分の環境で使えます。",
+        "image":"googlecsp.png",
+        "url":"https://googlecsplus.herokuapp.com/"
+      },
+      {
+        "title":"User Authentication Hacking",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"userauthenhack.png",
+        "url":"https://loginhacking.herokuapp.com/"
+      },
+      {
+        "title":"HARUKAZE Project",
+        "category":"A React based resume website template",
+        "image":"harukazepage.png",
+        "url":"https://harukaze1.herokuapp.com/"
+      },
+      {
+        "title":"HARUKAZE exe for Windows",
+        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "image":"harukazedownload.png",
+        "url":"https://hirokazuniimoto.github.io/portfolio/HarukaZe.zip"
+      },
+      {
+        "title":"clsforyou",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"clsforyou.png",
+        "url":"https://pypi.org/project/clsforyou/"
+      },
+      {
+        "title":"SKY/FLY Project",
+        "category":"(offline now) A fighting gear company I started",
+        "image":"sky.png",
+        "url":"https://hirokazuniimoto.github.io/sky_mainpage/"
+      },
+      {
+        "title":"WorkPlace has SKY",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"workplacehassky.png",
+        "url":"https://github.com/hirokazuniimoto/portfolio/releases/tag/release3"
+      },
+      {
+        "title":"YoURList",
+        "category":"Website I built for a restaurant I like in Thailand",
+        "image":"YoURList.png",
+        "url":"https://hirokazuniimoto.github.io/YoURList/"
+      }
+
+    ]
+  }
+}
